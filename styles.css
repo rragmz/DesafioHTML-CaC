@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style:  none;
+}
+
+header nav ul li{
+    margin-right: 20px;
+}
+
+a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 1.3rem;
+  }
+  
+a:hover {
+    color: rgb(255, 255, 255);
+}
+  
+a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    background-color: #ff0066;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+ a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+main{
+    width: 100%;
+    height: 190vh;
+}
+main .inicio{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .inicio img{
+    height: 510px;
+    width: 325px;
+    margin-bottom: -10px;
+}
+
+main .inicio p{
+    width: 60%;
+    font-size: 2.6rem;
+    margin-right: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+span{
+    background: linear-gradient(#ff0066, #ff9900);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+main .inicio, .cac{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .info{
+    height: 100vh;
+    width: 100%;
+    background: url("img/fondo.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .info .texto{
+    height: 100vh;
+    width: 50%;
+    text-align: center;
+    margin-top: 9%;
+}
+
+h2{
+    margin-bottom: 10%;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Red Hat Mono', monospace;
+    background: linear-gradient(#ff0066, #ff9900);
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+
+ .texto p{
+    font-size: 1.6rem;
+}
+
+main .cac{
+    background: url("img/fondo2.png");
+    background-size: cover;
+}
+.cac .texto h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.cac .texto p{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
